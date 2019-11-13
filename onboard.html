@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <title>Web Prototype</title>
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <ul class="nav">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">PERSONAL</a></li>
+        <li><a href="#">BUSINESS</a></li>
+        <li><a href="#">CORPORATE</a></li>
+        <li id="login"><a href="#">LOGIN</a></li>
+    </ul>
+    <main>
+
+        <form action="post.html">
+            <h2>A Bit About Yourself</h2>
+
+            <div class="form-group">
+                <label for="first name">First Name</label>
+                <input required type="text" id="firstname" name="firstname" placeholder="Enter your last name here">
+                <div class="messages"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="middle name">Middle Name <span>If Applicable</span></label>
+                <input type="text" id="middlename" name="middlename" placeholder="Enter your middle name here">
+                <div class="messages"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="last name">Last Name</label>
+                <input required type="text" id="lastname" name="lastname" placeholder="Enter your last name here">
+                <div class="messages"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="birthday">Birthday</label>
+                <input type="date" id="birthday" name="birthday">
+                <div class="messages"></div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="onboard1">Continue</button></a>
+                <span id="onboard2"></span>
+                <span id="onboard3"></span>
+            </div>
+        </form>
+
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+
+</body>
+
+</html>
